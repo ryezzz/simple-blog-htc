@@ -22,7 +22,7 @@ export const IndexPageTemplate = ({
 
   return (
     <div>
-      <FullWidthImage img={heroImage} title={title} subheading={subheading} />
+      {/* <FullWidthImage img={heroImage} title={title} subheading={subheading} />
       <section className="section section--gradient">
         <div className="container">
           <div className="section">
@@ -69,7 +69,7 @@ export const IndexPageTemplate = ({
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
@@ -90,19 +90,22 @@ const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
   return (
-    <Layout>
-      <IndexPageTemplate
-        image={frontmatter.image}
-        title={frontmatter.title}
-        heading={frontmatter.heading}
-        subheading={frontmatter.subheading}
-        mainpitch={frontmatter.mainpitch}
-        description={frontmatter.description}
-        intro={frontmatter.intro}
-      />
-    </Layout>
+    <div>Logo goes here</div>
+ 
   );
 };
+
+   // <Layout>
+    //   <IndexPageTemplate
+    //     image={frontmatter.image}
+    //     title={frontmatter.title}
+    //     heading={frontmatter.heading}
+    //     subheading={frontmatter.subheading}
+    //     mainpitch={frontmatter.mainpitch}
+    //     description={frontmatter.description}
+    //     intro={frontmatter.intro}
+    //   />
+    // </Layout>
 
 IndexPage.propTypes = {
   data: PropTypes.shape({
