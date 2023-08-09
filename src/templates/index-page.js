@@ -7,6 +7,7 @@ import Layout from "../components/Layout";
 import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
 import FullWidthImage from "../components/FullWidthImage";
+import Logo from "../components/logo"
 
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
@@ -70,6 +71,7 @@ export const IndexPageTemplate = ({
           </div>
         </div>
       </section> */}
+      <Logo></Logo>
     </div>
   );
 };
@@ -90,7 +92,8 @@ const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
   return (
-    <div>Logo goes here</div>
+    <div>      <Logo></Logo>
+    </div>
  
   );
 };
