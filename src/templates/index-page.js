@@ -92,8 +92,8 @@ const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
   return (
-    <div>      <Logo></Logo>
-    </div>
+    <div className="bg-slate-900 absolute h-full w-full bg-gradient-to-r from-blue-900 to-transparent">
+<div className="flex flex-auto items-center w-full h-full  justify-around"><Logo></Logo> </div>   </div>
  
   );
 };
