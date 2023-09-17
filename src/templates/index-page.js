@@ -71,7 +71,6 @@ export const IndexPageTemplate = ({
           </div>
         </div>
       </section> */}
-      <Logo></Logo>
     </div>
   );
 };
@@ -93,22 +92,23 @@ const IndexPage = ({ data }) => {
 
   return (
     <div className="bg-slate-900 absolute h-full w-full bg-gradient-to-r from-blue-900 to-transparent">
-<div className="flex flex-auto items-center w-full h-full  justify-around"><Logo></Logo> </div>   </div>
- 
+      <div className="flex flex-auto text-white items-center w-full h-full  justify-around">
+        <div><div className="flex items-center justify-around"><Logo height="20vh"></Logo></div> <div className="text-center font-black text-xl">Hypertree Creative</div> </div></div>   </div>
+
   );
 };
 
-   // <Layout>
-    //   <IndexPageTemplate
-    //     image={frontmatter.image}
-    //     title={frontmatter.title}
-    //     heading={frontmatter.heading}
-    //     subheading={frontmatter.subheading}
-    //     mainpitch={frontmatter.mainpitch}
-    //     description={frontmatter.description}
-    //     intro={frontmatter.intro}
-    //   />
-    // </Layout>
+//  <Layout>
+//     <IndexPageTemplate
+//       image={frontmatter.image}
+//       title={frontmatter.title}
+//       heading={frontmatter.heading}
+//       subheading={frontmatter.subheading}
+//       mainpitch={frontmatter.mainpitch}
+//       description={frontmatter.description}
+//       intro={frontmatter.intro}
+//     />
+//   </Layout>
 
 IndexPage.propTypes = {
   data: PropTypes.shape({
